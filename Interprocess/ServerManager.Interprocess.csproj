@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>DiegoG.ServerManager.Base</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\DGUtilities\DiegoG.Utilities.Base\DiegoG.Utilities.Base.csproj" />
+    <ProjectReference Include="..\..\DGUtilities\DiegoG.Utilities.Basic\DiegoG.Utilities.Basic.csproj" />
+    <ProjectReference Include="..\..\DGUtilities\DiegoG.Utilities.Serialization\DiegoG.Utilities.Serialization.csproj" />
+  </ItemGroup>
+
+</Project>

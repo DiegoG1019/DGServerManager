@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>DiegoG.ServerManager.Daemon</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DaemonCommands\AttachProcess.cs~RF5278722.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NLua" Version="1.5.7" />
+    <PackageReference Include="Serilog.Sinks.SyslogMessages" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\DGUtilities\DiegoG.CLI\DiegoG.CLI.csproj" />
+    <ProjectReference Include="..\..\DGUtilities\DiegoG.Utilities.Base\DiegoG.Utilities.Base.csproj" />
+    <ProjectReference Include="..\..\DGUtilities\DiegoG.Utilities.Basic\DiegoG.Utilities.Basic.csproj" />
+    <ProjectReference Include="..\..\DGUtilities\DiegoG.Utilities.Serialization\DiegoG.Utilities.Serialization.csproj" />
+    <ProjectReference Include="..\Interprocess\ServerManager.Interprocess.csproj" />
+  </ItemGroup>
+
+</Project>
